@@ -1,0 +1,20 @@
+{% extends "restaurants.html" %}
+{% block body %}
+<body>
+<h1> Edit Menu Item </h1>
+
+<form action="{{url_for('newrestaurant')}}" method = 'POST'>
+
+<p>Name:</p>
+
+<input type='text' size='30' name='name'>
+
+{% block input %}
+<input type='submit' value='Create'>
+{% endblock %}
+<a href = "{{url_for('totalrestaurants')}}">Cancel</a>
+</form>
+
+
+</body>
+{% endblock %}
